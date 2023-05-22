@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040C14D32A03B584006B36E8 /* BusinessTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C14D22A03B584006B36E8 /* BusinessTypeViewController.swift */; };
+		040C14D52A03C600006B36E8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C14D42A03C600006B36E8 /* SearchViewController.swift */; };
+		042C31612A161B8A0035BCBD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C31602A161B8A0035BCBD /* LoginModel.swift */; };
+		043D22F32A00E65A0052BAB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D22F22A00E65A0052BAB9 /* LoginViewController.swift */; };
+		04576CDE2A0CE521002E63CD /* FilterPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04576CDD2A0CE521002E63CD /* FilterPresentationController.swift */; };
+		04576CE02A0CE59C002E63CD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04576CDF2A0CE59C002E63CD /* FilterViewController.swift */; };
+		04596E542A00DD5C00B42A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04596E532A00DD5C00B42A8F /* AppDelegate.swift */; };
+		04596E562A00DD5C00B42A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04596E552A00DD5C00B42A8F /* SceneDelegate.swift */; };
+		04596E5B2A00DD5C00B42A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04596E592A00DD5C00B42A8F /* Main.storyboard */; };
+		04596E5D2A00DD5D00B42A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04596E5C2A00DD5D00B42A8F /* Assets.xcassets */; };
+		04596E602A00DD5D00B42A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04596E5E2A00DD5D00B42A8F /* LaunchScreen.storyboard */; };
+		04596E682A00DE0E00B42A8F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04596E672A00DE0E00B42A8F /* Utilities.swift */; };
+		04596E6A2A00DE2300B42A8F /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04596E692A00DE2300B42A8F /* WebServices.swift */; };
+		047A81782A022E8100D83FE6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A81772A022E8100D83FE6 /* SignUpViewController.swift */; };
+		047B94A12A135C6900AEB278 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B94A02A135C6900AEB278 /* API.swift */; };
+		047B94A32A138A4600AEB278 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B94A22A138A4600AEB278 /* Extra.swift */; };
+		047B9CFB2A0A12C600BE4ABD /* LicenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */; };
+		048580AF2A0A18E00058F54C /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048580AE2A0A18E00058F54C /* GetStartedViewController.swift */; };
+		049B00532A126F2B003AE27B /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B00522A126F2B003AE27B /* SignUpModel.swift */; };
+		04BDB5E32A17454B003FB226 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */; };
+		04CE06982A02624F00BC16E6 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */; };
+		04CE06992A02624F00BC16E6 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */; };
+		81E65C662664E1CB96692F14 /* Pods_Alicorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9042D2F6159676BC0597B925 /* Pods_Alicorn.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040C14D22A03B584006B36E8 /* BusinessTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTypeViewController.swift; sourceTree = "<group>"; };
+		040C14D42A03C600006B36E8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		042C31602A161B8A0035BCBD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		043D22F22A00E65A0052BAB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04576CDD2A0CE521002E63CD /* FilterPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPresentationController.swift; sourceTree = "<group>"; };
+		04576CDF2A0CE59C002E63CD /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		04596E502A00DD5C00B42A8F /* Alicorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alicorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04596E532A00DD5C00B42A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04596E552A00DD5C00B42A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04596E5A2A00DD5C00B42A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04596E5C2A00DD5D00B42A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04596E5F2A00DD5D00B42A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04596E612A00DD5D00B42A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04596E672A00DE0E00B42A8F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		04596E692A00DE2300B42A8F /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		047A81772A022E8100D83FE6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		047B94A02A135C6900AEB278 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		047B94A22A138A4600AEB278 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
+		047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenceViewController.swift; sourceTree = "<group>"; };
+		048580AE2A0A18E00058F54C /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		049B00522A126F2B003AE27B /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
+		04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		069F171CA51C325BC43804A6 /* Pods-Alicorn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alicorn.debug.xcconfig"; path = "Target Support Files/Pods-Alicorn/Pods-Alicorn.debug.xcconfig"; sourceTree = "<group>"; };
+		75C44D2B18E508C0894651D7 /* Pods-Alicorn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alicorn.release.xcconfig"; path = "Target Support Files/Pods-Alicorn/Pods-Alicorn.release.xcconfig"; sourceTree = "<group>"; };
+		9042D2F6159676BC0597B925 /* Pods_Alicorn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alicorn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04596E4D2A00DD5C00B42A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E65C662664E1CB96692F14 /* Pods_Alicorn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04596E472A00DD5C00B42A8F = {
+			isa = PBXGroup;
+			children = (
+				04596E522A00DD5C00B42A8F /* Alicorn */,
+				04596E512A00DD5C00B42A8F /* Products */,
+				B725D0BB2E3CEDF1D4F5288C /* Pods */,
+				107A8D43313F67DFDF1708E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04596E512A00DD5C00B42A8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04596E502A00DD5C00B42A8F /* Alicorn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04596E522A00DD5C00B42A8F /* Alicorn */ = {
+			isa = PBXGroup;
+			children = (
+				04596E532A00DD5C00B42A8F /* AppDelegate.swift */,
+				04596E552A00DD5C00B42A8F /* SceneDelegate.swift */,
+				047A81762A022E5B00D83FE6 /* ViewControllers */,
+				049B00562A126F44003AE27B /* Models */,
+				04CE069A2A02626000BC16E6 /* TableViewCells */,
+				04CE06952A02411A00BC16E6 /* Helpers */,
+				04596E592A00DD5C00B42A8F /* Main.storyboard */,
+				04596E5C2A00DD5D00B42A8F /* Assets.xcassets */,
+				04596E5E2A00DD5D00B42A8F /* LaunchScreen.storyboard */,
+				04596E612A00DD5D00B42A8F /* Info.plist */,
+			);
+			path = Alicorn;
+			sourceTree = "<group>";
+		};
+		047A81762A022E5B00D83FE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				043D22F22A00E65A0052BAB9 /* LoginViewController.swift */,
+				047A81772A022E8100D83FE6 /* SignUpViewController.swift */,
+				040C14D22A03B584006B36E8 /* BusinessTypeViewController.swift */,
+				040C14D42A03C600006B36E8 /* SearchViewController.swift */,
+				04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */,
+				047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */,
+				048580AE2A0A18E00058F54C /* GetStartedViewController.swift */,
+				04576CDD2A0CE521002E63CD /* FilterPresentationController.swift */,
+				04576CDF2A0CE59C002E63CD /* FilterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		049B00562A126F44003AE27B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				049B00572A126F52003AE27B /* SignUpModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		049B00572A126F52003AE27B /* SignUpModel */ = {
+			isa = PBXGroup;
+			children = (
+				049B00522A126F2B003AE27B /* SignUpModel.swift */,
+				042C31602A161B8A0035BCBD /* LoginModel.swift */,
+			);
+			path = SignUpModel;
+			sourceTree = "<group>";
+		};
+		04CE06952A02411A00BC16E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04596E672A00DE0E00B42A8F /* Utilities.swift */,
+				047B94A02A135C6900AEB278 /* API.swift */,
+				04596E692A00DE2300B42A8F /* WebServices.swift */,
+				047B94A22A138A4600AEB278 /* Extra.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04CE069A2A02626000BC16E6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */,
+				04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		107A8D43313F67DFDF1708E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9042D2F6159676BC0597B925 /* Pods_Alicorn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B725D0BB2E3CEDF1D4F5288C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				069F171CA51C325BC43804A6 /* Pods-Alicorn.debug.xcconfig */,
+				75C44D2B18E508C0894651D7 /* Pods-Alicorn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04596E4F2A00DD5C00B42A8F /* Alicorn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04596E642A00DD5D00B42A8F /* Build configuration list for PBXNativeTarget "Alicorn" */;
+			buildPhases = (
+				336D363B454469ACEFC9CD4F /* [CP] Check Pods Manifest.lock */,
+				04596E4C2A00DD5C00B42A8F /* Sources */,
+				04596E4D2A00DD5C00B42A8F /* Frameworks */,
+				04596E4E2A00DD5C00B42A8F /* Resources */,
+				750E30107E2CD91B41CAD9D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alicorn;
+			productName = Alicorn;
+			productReference = 04596E502A00DD5C00B42A8F /* Alicorn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04596E482A00DD5C00B42A8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					04596E4F2A00DD5C00B42A8F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 04596E4B2A00DD5C00B42A8F /* Build configuration list for PBXProject "Alicorn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04596E472A00DD5C00B42A8F;
+			productRefGroup = 04596E512A00DD5C00B42A8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04596E4F2A00DD5C00B42A8F /* Alicorn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04596E4E2A00DD5C00B42A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CE06992A02624F00BC16E6 /* ContactTableViewCell.xib in Resources */,
+				04596E602A00DD5D00B42A8F /* LaunchScreen.storyboard in Resources */,
+				04596E5D2A00DD5D00B42A8F /* Assets.xcassets in Resources */,
+				04596E5B2A00DD5C00B42A8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		336D363B454469ACEFC9CD4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alicorn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		750E30107E2CD91B41CAD9D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alicorn/Pods-Alicorn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alicorn/Pods-Alicorn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alicorn/Pods-Alicorn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04596E4C2A00DD5C00B42A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040C14D52A03C600006B36E8 /* SearchViewController.swift in Sources */,
+				040C14D32A03B584006B36E8 /* BusinessTypeViewController.swift in Sources */,
+				047B94A32A138A4600AEB278 /* Extra.swift in Sources */,
+				043D22F32A00E65A0052BAB9 /* LoginViewController.swift in Sources */,
+				048580AF2A0A18E00058F54C /* GetStartedViewController.swift in Sources */,
+				04576CDE2A0CE521002E63CD /* FilterPresentationController.swift in Sources */,
+				047A81782A022E8100D83FE6 /* SignUpViewController.swift in Sources */,
+				04596E6A2A00DE2300B42A8F /* WebServices.swift in Sources */,
+				04BDB5E32A17454B003FB226 /* SignUp2ViewController.swift in Sources */,
+				04576CE02A0CE59C002E63CD /* FilterViewController.swift in Sources */,
+				047B9CFB2A0A12C600BE4ABD /* LicenceViewController.swift in Sources */,
+				04CE06982A02624F00BC16E6 /* ContactTableViewCell.swift in Sources */,
+				04596E542A00DD5C00B42A8F /* AppDelegate.swift in Sources */,
+				042C31612A161B8A0035BCBD /* LoginModel.swift in Sources */,
+				04596E682A00DE0E00B42A8F /* Utilities.swift in Sources */,
+				04596E562A00DD5C00B42A8F /* SceneDelegate.swift in Sources */,
+				047B94A12A135C6900AEB278 /* API.swift in Sources */,
+				049B00532A126F2B003AE27B /* SignUpModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04596E592A00DD5C00B42A8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04596E5A2A00DD5C00B42A8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04596E5E2A00DD5D00B42A8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04596E5F2A00DD5D00B42A8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04596E622A00DD5D00B42A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04596E632A00DD5D00B42A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04596E652A00DD5D00B42A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069F171CA51C325BC43804A6 /* Pods-Alicorn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HG54YWY75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alicorn/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.web.Alicorn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04596E662A00DD5D00B42A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C44D2B18E508C0894651D7 /* Pods-Alicorn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HG54YWY75;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alicorn/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.web.Alicorn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04596E4B2A00DD5C00B42A8F /* Build configuration list for PBXProject "Alicorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04596E622A00DD5D00B42A8F /* Debug */,
+				04596E632A00DD5D00B42A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04596E642A00DD5D00B42A8F /* Build configuration list for PBXNativeTarget "Alicorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04596E652A00DD5D00B42A8F /* Debug */,
+				04596E662A00DD5D00B42A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04596E482A00DD5C00B42A8F /* Project object */;
+}

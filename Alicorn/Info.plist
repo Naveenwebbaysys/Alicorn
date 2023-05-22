@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!--	<key>UIStatusBarHidden</key>-->
+<!--	<true/>-->
+<!--	<key>UIViewControllerBasedStatusBarAppearance</key>-->
+<!--	<false/>-->
+<key>NSCalendarsUsageDescription</key>
+     <string>Alicorn calendar events</string>
+   <key>NSRemindersUsageDescription</key>
+     <string>Alicorn reminder use</string>
+   <key>NSCameraUsageDescription</key>
+     <string>Alicorn requires to access your photo library to show image on profile and send via chat</string>
+   <key>NSMicrophoneUsageDescription</key>
+     <string>Alicorn requires to access your microphone to record video with your voice send via chat</string>
+   <key>NSPhotoLibraryUsageDescription</key>
+     <string>Alicorn requires to access your photo library to show image on profile and send via chat</string>
+   <key>NSContactsUsageDescription</key>
+      <string>Alicorn contact use</string>
+   <key>NSLocationAlwaysUsageDescription</key>
+     <string>Alicorn location use</string>
+   <key>NSLocationWhenInUseUsageDescription</key>
+     <string>Alicorn location use</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

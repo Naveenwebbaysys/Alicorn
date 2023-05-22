@@ -1,0 +1,6 @@
+framework module Pods_Alicorn {
+  umbrella header "Pods-Alicorn-umbrella.h"
+
+  export *
+  module * { export * }
+}
