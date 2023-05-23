@@ -1,79 +1,32 @@
 PODS:
   - Alamofire (5.6.4)
-  - DTTextField (0.7.0)
   - IQKeyboardManagerSwift (6.5.11)
   - Kingfisher (7.6.2)
-  - MaterialComponents/AnimationTiming (124.2.0)
-  - MaterialComponents/Availability (124.2.0)
-  - MaterialComponents/private/Math (124.2.0)
-  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (124.2.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+Shared (124.2.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/TextControls+Enums"
-  - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/TextControls+BaseTextFields (124.2.0)":
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-    - "MaterialComponents/private/TextControlsPrivate+TextFields"
-    - MDFInternationalization
-  - "MaterialComponents/TextControls+Enums (124.2.0)"
-  - "MaterialComponents/TextControls+OutlinedTextFields (124.2.0)":
-    - MaterialComponents/Availability
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
-    - "MaterialComponents/TextControls+BaseTextFields"
   - MBProgressHUD (1.2.0)
-  - MDFInternationalization (3.0.0)
-  - SkyFloatingLabelTextField (3.8.0)
   - SnapKit (5.6.0)
-  - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
   - Alamofire
-  - DTTextField
   - IQKeyboardManagerSwift
   - Kingfisher
-  - "MaterialComponents/TextControls+OutlinedTextFields"
   - MBProgressHUD
-  - SkyFloatingLabelTextField (~> 3.0)
   - SnapKit
-  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - DTTextField
     - IQKeyboardManagerSwift
     - Kingfisher
-    - MaterialComponents
     - MBProgressHUD
-    - MDFInternationalization
-    - SkyFloatingLabelTextField
     - SnapKit
-    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  DTTextField: 768d5991211599145f289971e5936f8bb29990bb
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
-  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
-  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: 9eb1df3d2565e5222a2eb6e26d7da91d38a24994
+PODFILE CHECKSUM: c38b31afb28809eec25e6bfc5771ee7e827a3ea7
 
 COCOAPODS: 1.12.1

@@ -9,8 +9,11 @@ import Foundation
 import Alamofire
 
 
-let headers : HTTPHeaders = ["Accept": "application/json"]
+var authToken = ""
+var headers : HTTPHeaders = ["Accept": "application/json", "Authorization": "Bearer " + authToken]
 let baseURL = "https://beta.alicorns.com/api/"
 let signUpAPI = "register"
 let loginAPI = "login"
 let userInfo = "user"
+let productAPI = "product"
+let deleteProductAPI = "product/"

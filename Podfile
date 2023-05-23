@@ -10,10 +10,11 @@ target 'Alicorn' do
 	pod 'Alamofire'
 	pod 'Kingfisher'
 	pod 'MBProgressHUD'
-  pod 'SkyFloatingLabelTextField', '~> 3.0'
-  pod "ViewAnimator"
-  pod 'SnapKit'
-  pod 'MaterialComponents/TextControls+OutlinedTextFields'
-pod 'DTTextField'
+ 	pod 'SnapKit'
+
+ # pod "ViewAnimator"
+
+ # pod 'MaterialComponents/TextControls+OutlinedTextFields'
+ # pod 'SkyFloatingLabelTextField', '~> 3.0'
 
 end

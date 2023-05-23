@@ -18,8 +18,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        userIDTF.text = "testapi1@gmail.com"
-        passwordTF.text = "123412345"
+        userIDTF.text = "kranti@gmail.com"
+        passwordTF.text = "password"
     }
     
     
@@ -41,30 +41,34 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUpBtnAction (_ sender : UIButton)
     {
-        let signUpVC = self.storyboard?.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
-        self.navigationController?.pushViewController(signUpVC, animated: true)
+        self.moveToSignUp()
+        
     }
     
     @IBAction func loginBtnAction (_ sender : UIButton)
     {
         if Reachability.isConnectedToNetwork() {
             if (self.userIDTF.text == "" || self.passwordTF.text == ""){
-                showAlert(title: "Alert", message: "Please fill the required fields", actionTitles: ["Ok"],
-                          actions: [
-                            {_ in print("cancel click") }])
+                showToast(message: "Please fill the required fields")
             }
             else
             {
+                MBProgressHUD.showAdded(to: self.view, animated: true)
                 let loginParameters = LoginRequestModel(email: self.userIDTF.text, password: self.passwordTF.text)
                 AF.request(baseURL+loginAPI, method: .post, parameters: loginParameters, encoder: JSONParameterEncoder.default, headers: headers).response { loginResult in
-                    
+                    MBProgressHUD.hide(for: self.view, animated: true)
                     if loginResult.response?.statusCode == 200
-                    {                    let loginResponseModel = try? JSONDecoder().decode(LoginResponseModel.self, from: loginResult.data!)
+                    {   let loginResponseModel = try? JSONDecoder().decode(LoginResponseModel.self, from: loginResult.data!)
                         
-                        print(":::: Login Sucessfully ::::")
+                        print(":::: Login Sucessfull ::::")
                         print(loginResponseModel!.data!.token!)
+                        self.showToast(message: loginResponseModel!.message!)
                         let loginToken = loginResponseModel!.data!.token!
+                        authToken = loginResponseModel!.data!.token!
                         UserDefaults.standard.set(loginToken, forKey: k_token)
+                        headers.update(name: "Authorization", value: "Bearer " + authToken)
+//                        self.moveToHome()
+                        self.moveToProductList()
                     }
                     else
                     {

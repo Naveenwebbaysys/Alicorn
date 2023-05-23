@@ -14,6 +14,8 @@ class SearchViewController:  UIViewController {
     
     @IBOutlet weak var searchTF : UITextField!
     @IBOutlet weak var menuAnimationView : UIView!
+    
+    @IBOutlet weak var segmentMenu: UISegmentedControl!
     let menuOpend = false
     @IBOutlet weak var btn1 : UIButton!
     @IBOutlet weak var btn2 : UIButton!
@@ -43,6 +45,9 @@ class SearchViewController:  UIViewController {
         menuAnimationViewDown = CGPoint(x: 0 ,y: view.height - 130)
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         menuAnimationView.addGestureRecognizer(panGestureRecognizer)
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14)]
+        segmentMenu.setTitleTextAttributes(titleTextAttributes, for: .normal)
+        segmentMenu.setTitleTextAttributes(titleTextAttributes, for: .selected)
     }
     
     @objc private func didPan(_ sender: UIPanGestureRecognizer) {

@@ -13,9 +13,10 @@ import AuthenticationServices
 
 
 let k_token = ""
+let k_signUptoken = ""
 
 @IBDesignable extension UIView {
-
+    
     @IBInspectable var borderWidth: CGFloat {
         set {
             layer.borderWidth = newValue
@@ -24,7 +25,7 @@ let k_token = ""
             return layer.borderWidth
         }
     }
-
+    
     @IBInspectable var cornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue
@@ -33,7 +34,7 @@ let k_token = ""
             return layer.cornerRadius
         }
     }
-
+    
     @IBInspectable var borderColor: UIColor? {
         set {
             guard let uiColor = newValue else { return }
@@ -44,12 +45,54 @@ let k_token = ""
             return UIColor(cgColor: color)
         }
     }
+    @IBInspectable
+        var shadowRadius: CGFloat {
+            get {
+                return layer.shadowRadius
+            }
+            set {
+
+                layer.shadowRadius = newValue
+            }
+        }
+        @IBInspectable
+        var shadowOffset : CGSize{
+
+            get{
+                return layer.shadowOffset
+            }set{
+
+                layer.shadowOffset = newValue
+            }
+        }
+
+        @IBInspectable
+        var shadowColor : UIColor{
+            get{
+                return UIColor.init(cgColor: layer.shadowColor!)
+            }
+            set {
+                layer.shadowColor = newValue.cgColor
+            }
+        }
+        @IBInspectable
+        var shadowOpacity : Float {
+
+            get{
+                return layer.shadowOpacity
+            }
+            set {
+
+                layer.shadowOpacity = newValue
+
+            }
+        }
 }
 
 
 
 @IBDesignable extension UIButton {
-
+    
     @IBInspectable override var borderWidth: CGFloat {
         set {
             layer.borderWidth = newValue
@@ -58,7 +101,7 @@ let k_token = ""
             return layer.borderWidth
         }
     }
-
+    
     @IBInspectable override var cornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue
@@ -67,7 +110,7 @@ let k_token = ""
             return layer.cornerRadius
         }
     }
-
+    
     @IBInspectable override var borderColor: UIColor? {
         set {
             guard let uiColor = newValue else { return }
@@ -93,7 +136,7 @@ let k_token = ""
     final class GradientButton: UIButton {
         @IBInspectable var startColor: UIColor = UIColor.clear
         @IBInspectable var endColor: UIColor = UIColor.clear
-
+        
         override func draw(_ rect: CGRect) {
             let gradient: CAGradientLayer = CAGradientLayer()
             gradient.frame = CGRect(x: CGFloat(0),
@@ -111,13 +154,13 @@ let k_token = ""
 
 
 @IBDesignable class BigSwitch: UISwitch {
-
+    
     @IBInspectable var scale : CGFloat = 1{
         didSet{
             setup()
         }
     }
-
+    
     //from storyboard
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -128,21 +171,21 @@ let k_token = ""
         super.init(frame: frame)
         setup()
     }
-
+    
     private func setup(){
         self.transform = CGAffineTransform(scaleX: scale, y: scale)
     }
-
+    
     override func prepareForInterfaceBuilder() {
         setup()
         super.prepareForInterfaceBuilder()
     }
-
-
+    
+    
 }
 
 extension UITextField{
-   @IBInspectable var placeHolderColor: UIColor? {
+    @IBInspectable var placeHolderColor: UIColor? {
         get {
             return self.placeHolderColor
         }
@@ -160,11 +203,11 @@ public class Gradient: UIView {
     @IBInspectable var endLocation:   Double =   0.95 { didSet { updateLocations() }}
     @IBInspectable var horizontalMode:  Bool =  false { didSet { updatePoints() }}
     @IBInspectable var diagonalMode:    Bool =  false { didSet { updatePoints() }}
-
+    
     override public class var layerClass: AnyClass { CAGradientLayer.self }
-
+    
     var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
-
+    
     func updatePoints() {
         if horizontalMode {
             gradientLayer.startPoint = diagonalMode ? .init(x: 1, y: 0) : .init(x: 0, y: 0.5)
@@ -186,14 +229,14 @@ public class Gradient: UIView {
         updateLocations()
         updateColors()
     }
-
+    
 }
 
 
 
 
 extension UIView {
-
+    
     var x: CGFloat {
         get {
             self.frame.origin.x
@@ -202,7 +245,7 @@ extension UIView {
             self.frame.origin.x = newValue
         }
     }
-
+    
     var y: CGFloat {
         get {
             self.frame.origin.y
@@ -211,7 +254,7 @@ extension UIView {
             self.frame.origin.y = newValue
         }
     }
-
+    
     var height: CGFloat {
         get {
             self.frame.size.height
@@ -220,7 +263,7 @@ extension UIView {
             self.frame.size.height = newValue
         }
     }
-
+    
     var width: CGFloat {
         get {
             self.frame.size.width
@@ -263,6 +306,23 @@ extension UIViewController {
         }
         self.present(alertController, animated: true)
     }
+    
+    
+    func moveToHome()
+    {
+        let homeVC = self.storyboard?.instantiateViewController(identifier: "SearchViewController") as! SearchViewController
+        self.navigationController?.pushViewController(homeVC, animated: true)
+    }
+    func moveToSignUp()
+    {
+        let signUpVC = self.storyboard?.instantiateViewController(identifier: "SignUp2ViewController") as! SignUp2ViewController
+        self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    func moveToProductList()
+    {
+        let productVC = self.storyboard?.instantiateViewController(identifier: "ProductListViewController") as! ProductListViewController
+        self.navigationController?.pushViewController(productVC, animated: true)
+    }
 }
 
 extension UIViewController
@@ -289,9 +349,9 @@ extension UIViewController
         self.view.addSubview(toastLabel)
         DispatchQueue.main.asyncAfter(deadline: .now()+1) {
             UIView.animate(withDuration: 2.0, delay: 0.2, options: .curveEaseOut, animations:
-                {
-            toastLabel.alpha = 0.0
-                    
+                            {
+                toastLabel.alpha = 0.0
+                
             }) { (isCompleted) in
                 toastLabel.removeFromSuperview()
             }
@@ -368,14 +428,14 @@ struct Users{
 
 
 extension UIImage{
-
+    
     var roundMyImage: UIImage {
         let rect = CGRect(origin:CGPoint(x: 0, y: 0), size: self.size)
         UIGraphicsBeginImageContextWithOptions(self.size, false, 1)
         UIBezierPath(
             roundedRect: rect,
             cornerRadius: self.size.height
-            ).addClip()
+        ).addClip()
         self.draw(in: rect)
         return UIGraphicsGetImageFromCurrentImageContext()!
     }
@@ -384,23 +444,23 @@ extension UIImage{
         let scale = newWidth / self.size.width
         let newHeight = self.size.height * scale
         UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-
+        
         self.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        
         return newImage!
     }
     
     
     func squareMyImage() -> UIImage {
         UIGraphicsBeginImageContext(CGSize(width: self.size.width, height: self.size.width))
-
+        
         self.draw(in: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.width))
-
+        
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        
         return newImage!
     }
 }
@@ -484,3 +544,49 @@ func getPointForView(_ view : UISegmentedControl) -> (x:CGFloat,y:CGFloat)
     let y = view.frame.origin.y
     return (x,y)
 }
+
+
+extension UISegmentedControl
+{
+    func defaultConfiguration(font: UIFont = UIFont.systemFont(ofSize: 12), color: UIColor = UIColor.white)
+    {
+        let defaultAttributes = [
+            NSAttributedString.Key.font: font,
+            NSAttributedString.Key.foregroundColor: color
+        ]
+        setTitleTextAttributes(defaultAttributes, for: .normal)
+    }
+
+    func selectedConfiguration(font: UIFont = UIFont.boldSystemFont(ofSize: 12), color: UIColor = UIColor.red)
+    {
+        let selectedAttributes = [
+            NSAttributedString.Key.font: font,
+            NSAttributedString.Key.foregroundColor: color
+        ]
+        setTitleTextAttributes(selectedAttributes, for: .selected)
+    }
+}
+
+extension Array where Element: Equatable {
+
+    @discardableResult mutating func remove(object: Element) -> Bool {
+        if let index = firstIndex(of: object) {
+            self.remove(at: index)
+            return true
+        }
+        return false
+    }
+
+    @discardableResult mutating func remove(where predicate: (Array.Iterator.Element) -> Bool) -> Bool {
+        if let index = self.firstIndex(where: { (element) -> Bool in
+            return predicate(element)
+        }) {
+            self.remove(at: index)
+            return true
+        }
+        return false
+    }
+
+}
+
+

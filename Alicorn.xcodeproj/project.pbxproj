@@ -25,6 +25,10 @@
 		047B94A32A138A4600AEB278 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B94A22A138A4600AEB278 /* Extra.swift */; };
 		047B9CFB2A0A12C600BE4ABD /* LicenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */; };
 		048580AF2A0A18E00058F54C /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048580AE2A0A18E00058F54C /* GetStartedViewController.swift */; };
+		0489ABA52A1C994C001E8730 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489ABA32A1C994C001E8730 /* ProductListTableViewCell.swift */; };
+		0489ABA62A1C994C001E8730 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0489ABA42A1C994C001E8730 /* ProductListTableViewCell.xib */; };
+		0489ABA82A1C9975001E8730 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489ABA72A1C9975001E8730 /* ProductListViewController.swift */; };
+		0489ABAA2A1CB62C001E8730 /* ProductsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489ABA92A1CB62C001E8730 /* ProductsResponseModel.swift */; };
 		049B00532A126F2B003AE27B /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B00522A126F2B003AE27B /* SignUpModel.swift */; };
 		04BDB5E32A17454B003FB226 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */; };
 		04CE06982A02624F00BC16E6 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */; };
@@ -53,6 +57,10 @@
 		047B94A22A138A4600AEB278 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
 		047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenceViewController.swift; sourceTree = "<group>"; };
 		048580AE2A0A18E00058F54C /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		0489ABA32A1C994C001E8730 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		0489ABA42A1C994C001E8730 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		0489ABA72A1C9975001E8730 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		0489ABA92A1CB62C001E8730 /* ProductsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponseModel.swift; sourceTree = "<group>"; };
 		049B00522A126F2B003AE27B /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
 		04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 				047A81772A022E8100D83FE6 /* SignUpViewController.swift */,
 				040C14D22A03B584006B36E8 /* BusinessTypeViewController.swift */,
 				040C14D42A03C600006B36E8 /* SearchViewController.swift */,
+				0489ABA72A1C9975001E8730 /* ProductListViewController.swift */,
 				04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */,
 				047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */,
 				048580AE2A0A18E00058F54C /* GetStartedViewController.swift */,
@@ -138,6 +147,7 @@
 			children = (
 				049B00522A126F2B003AE27B /* SignUpModel.swift */,
 				042C31602A161B8A0035BCBD /* LoginModel.swift */,
+				0489ABA92A1CB62C001E8730 /* ProductsResponseModel.swift */,
 			);
 			path = SignUpModel;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 			children = (
 				04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */,
 				04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */,
+				0489ABA32A1C994C001E8730 /* ProductListTableViewCell.swift */,
+				0489ABA42A1C994C001E8730 /* ProductListTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0489ABA62A1C994C001E8730 /* ProductListTableViewCell.xib in Resources */,
 				04CE06992A02624F00BC16E6 /* ContactTableViewCell.xib in Resources */,
 				04596E602A00DD5D00B42A8F /* LaunchScreen.storyboard in Resources */,
 				04596E5D2A00DD5D00B42A8F /* Assets.xcassets in Resources */,
@@ -295,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0489ABA52A1C994C001E8730 /* ProductListTableViewCell.swift in Sources */,
 				040C14D52A03C600006B36E8 /* SearchViewController.swift in Sources */,
+				0489ABA82A1C9975001E8730 /* ProductListViewController.swift in Sources */,
 				040C14D32A03B584006B36E8 /* BusinessTypeViewController.swift in Sources */,
 				047B94A32A138A4600AEB278 /* Extra.swift in Sources */,
 				043D22F32A00E65A0052BAB9 /* LoginViewController.swift in Sources */,
@@ -311,6 +326,7 @@
 				042C31612A161B8A0035BCBD /* LoginModel.swift in Sources */,
 				04596E682A00DE0E00B42A8F /* Utilities.swift in Sources */,
 				04596E562A00DD5C00B42A8F /* SceneDelegate.swift in Sources */,
+				0489ABAA2A1CB62C001E8730 /* ProductsResponseModel.swift in Sources */,
 				047B94A12A135C6900AEB278 /* API.swift in Sources */,
 				049B00532A126F2B003AE27B /* SignUpModel.swift in Sources */,
 			);
@@ -445,6 +461,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
