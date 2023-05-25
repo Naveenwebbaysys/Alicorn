@@ -33,6 +33,7 @@
 		04BDB5E32A17454B003FB226 /* SignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */; };
 		04CE06982A02624F00BC16E6 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */; };
 		04CE06992A02624F00BC16E6 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */; };
+		04FEE6492A1E0B96009D45BA /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE6482A1E0B96009D45BA /* AddProductViewController.swift */; };
 		81E65C662664E1CB96692F14 /* Pods_Alicorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9042D2F6159676BC0597B925 /* Pods_Alicorn.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2ViewController.swift; sourceTree = "<group>"; };
 		04CE06962A02624F00BC16E6 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		04CE06972A02624F00BC16E6 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		04FEE6482A1E0B96009D45BA /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		069F171CA51C325BC43804A6 /* Pods-Alicorn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alicorn.debug.xcconfig"; path = "Target Support Files/Pods-Alicorn/Pods-Alicorn.debug.xcconfig"; sourceTree = "<group>"; };
 		75C44D2B18E508C0894651D7 /* Pods-Alicorn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alicorn.release.xcconfig"; path = "Target Support Files/Pods-Alicorn/Pods-Alicorn.release.xcconfig"; sourceTree = "<group>"; };
 		9042D2F6159676BC0597B925 /* Pods_Alicorn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alicorn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				040C14D22A03B584006B36E8 /* BusinessTypeViewController.swift */,
 				040C14D42A03C600006B36E8 /* SearchViewController.swift */,
 				0489ABA72A1C9975001E8730 /* ProductListViewController.swift */,
+				04FEE6482A1E0B96009D45BA /* AddProductViewController.swift */,
 				04BDB5E22A17454B003FB226 /* SignUp2ViewController.swift */,
 				047B9CFA2A0A12C600BE4ABD /* LicenceViewController.swift */,
 				048580AE2A0A18E00058F54C /* GetStartedViewController.swift */,
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FEE6492A1E0B96009D45BA /* AddProductViewController.swift in Sources */,
 				0489ABA52A1C994C001E8730 /* ProductListTableViewCell.swift in Sources */,
 				040C14D52A03C600006B36E8 /* SearchViewController.swift in Sources */,
 				0489ABA82A1C9975001E8730 /* ProductListViewController.swift in Sources */,

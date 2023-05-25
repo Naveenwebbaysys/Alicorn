@@ -323,6 +323,12 @@ extension UIViewController {
         let productVC = self.storyboard?.instantiateViewController(identifier: "ProductListViewController") as! ProductListViewController
         self.navigationController?.pushViewController(productVC, animated: true)
     }
+    
+    func moveToaddProduct()
+    {
+        let productVC = self.storyboard?.instantiateViewController(identifier: "AddProductViewController") as! AddProductViewController
+        self.navigationController?.pushViewController(productVC, animated: true)
+    }
 }
 
 extension UIViewController

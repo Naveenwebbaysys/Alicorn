@@ -22,11 +22,7 @@ class ProductListViewController: UIViewController {
     @IBOutlet weak var lengthLbl : UILabel!
     @IBOutlet weak var stackableLbl : UILabel!
     
-    
-    
-    
     var productModelArray   = [Datum]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,9 +90,20 @@ class ProductListViewController: UIViewController {
     
     @IBAction func okBtnAction()
     {
-        self.productDetailsView.isHidden = true
-        bgv.removeFromSuperview()
-
+        UIView.animate(withDuration: 0.24, animations: {
+            self.productDetailsView.transform = CGAffineTransform(scaleX: 1.35, y: 1.35)
+            self.productDetailsView.alpha = 0.0
+        }) { _ in
+            self.productDetailsView.isHidden = true
+            self.bgv.removeFromSuperview()
+        }
+        
+       
+    }
+    
+    @IBAction func addProductbtnAction()
+    {
+        self.moveToaddProduct()
     }
 }
 
@@ -112,8 +119,8 @@ extension ProductListViewController: UITableViewDelegate, UITableViewDataSource 
         cell.productDescLbl.text = "\(serialNo)" + ". " + self.productModelArray[indexPath.row].productDescription!
         cell.nmfcLbl.text =        "NMFC : " + "\(self.productModelArray[indexPath.row].nmfc!)"
         cell.packageTypeLbl.text = "Package Type : "  + "\(self.productModelArray[indexPath.row].packageType!)"
-        cell.editBtn.addTarget(self, action: #selector(deleteProduct(sender:)), for: .touchUpInside)
-        cell.deleteBtn.addTarget(self, action: #selector(editProduct(sender:)), for: .touchUpInside)
+        cell.editBtn.addTarget(self, action: #selector(editProduct(sender:)), for: .touchUpInside)
+        cell.deleteBtn.addTarget(self, action: #selector(deleteProduct(sender:)), for: .touchUpInside)
         cell.editBtn.tag = indexPath.row
         cell.deleteBtn.tag = indexPath.row
         
@@ -122,7 +129,7 @@ extension ProductListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.productDetailsView.isHidden = false
-   
+        
         bgv = UIView(frame: view.frame)
         bgv.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         view.addSubview(bgv)
@@ -130,22 +137,32 @@ extension ProductListViewController: UITableViewDelegate, UITableViewDataSource 
         self.productDescLbl.text = self.productModelArray[indexPath.row].productDescription!
         self.nmfcLbl.text = "\(self.productModelArray[indexPath.row].nmfc!)"
         subLbl.text = "\(self.productModelArray[indexPath.row].sub!)"
-        classLbl.text = "\(self.productModelArray[indexPath.row].packageType!)"
-
+        classLbl.text = "\(self.productModelArray[indexPath.row].datumClass!)"
+        packageTypeLbl.text = "\(self.productModelArray[indexPath.row].packageType!)"
+        stackableLbl.text = "\(self.productModelArray[indexPath.row].stackable ?? 0)"
         
+        self.productDetailsView.transform = CGAffineTransform(scaleX: 1.35, y: 1.35)
+        self.productDetailsView.alpha = 0.0
+        UIView.animate(withDuration: 0.24) {
+            self.productDetailsView.transform = CGAffineTransform.identity
+            self.productDetailsView.alpha = 1.0
+        }
     }
     
     @objc func deleteProduct (sender : UIButton)
     {
-        
+        let productId = self.productModelArray[sender.tag].id
+        //        self.deleteProductAPICall(id: productId!)
+        self.productModelArray.removeAll(where: { $0.id == productId})
+        print(self.productModelArray.count)
+        self.productsTB.reloadData()
     }
     
     @objc func editProduct (sender : UIButton)
     {
-        let productId = self.productModelArray[sender.tag].id
-//        self.deleteProductAPICall(id: productId!)
-        self.productModelArray.removeAll(where: { $0.id == productId})
-        print(self.productModelArray.count)
-        self.productsTB.reloadData()
+        let productVC = self.storyboard?.instantiateViewController(identifier: "AddProductViewController") as! AddProductViewController
+        productVC.updateProductModelArray.append(self.productModelArray[sender.tag])
+        productVC.isFromNewProduct = false
+        self.navigationController?.pushViewController(productVC, animated: true)
     }
 }
